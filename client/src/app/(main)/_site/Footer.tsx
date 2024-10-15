@@ -1,6 +1,7 @@
 import React from "react";
+import { IoMenu } from "react-icons/io5";
 
-export default function Footer(){
+export default function Footer() {
   return (
     <>
       <footer className="relative z-10 bg-white pb-10 pt-20 dark:bg-black lg:pb-20 lg:pt-[120px]">
@@ -9,20 +10,13 @@ export default function Footer(){
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
                 <a href="/#" className="mb-6 inline-block max-w-[160px]">
-                  <img
-                    src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
-                    alt="logo"
-                    className="max-w-full dark:hidden"
-                  />
-                  <img
-                    src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
-                    alt="logo"
-                    className="max-w-full hidden dark:block"
-                  />
+                  <div className="flex items-center justify-center font-bold capitalize border-2 rounded border-app_theme">
+                    <p className="p-1 bg-app_theme text-white">Gupta</p>
+                    <p className="p-1 text-black dark:bg-white">Enclave</p>
+                  </div>
                 </a>
                 <p className="mb-7 text-base text-body-color dark:text-dark-6">
-                  Sed ut perspiciatis undmnis is iste natus error sit amet
-                  voluptatem totam rem aperiam.
+                  Present comfort and long-term value your properties offer.
                 </p>
                 <p className="flex items-center text-sm font-medium text-dark dark:text-white">
                   <span className="mr-3 text-primary">
@@ -203,10 +197,9 @@ export default function Footer(){
       </footer>
     </>
   );
-};
+}
 
-
-const LinkGroup = ({ children, header }:any) => {
+const LinkGroup = ({ children, header }: any) => {
   return (
     <>
       <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
@@ -221,7 +214,7 @@ const LinkGroup = ({ children, header }:any) => {
   );
 };
 
-const NavLink = ({ link, label }:any) => {
+const NavLink = ({ link, label }: any) => {
   return (
     <li>
       <a
